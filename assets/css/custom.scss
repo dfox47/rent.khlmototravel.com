@@ -5,16 +5,6 @@ h1 {
 	text-align: center;
 }
 
-.bikes {}
-
-.bike_item {
-	cursor: pointer;
-
-	img {
-		width: 200px;
-	}
-}
-
 .header {
 	align-items: center;
 	background-color: $c_main;
@@ -47,6 +37,21 @@ h1 {
 	img {
 		height: 100px;
 		width: 100px;
+	}
+}
+
+.price_total {
+	border: 1px solid $c_shadow;
+	bottom: 10px;
+	box-shadow: 3px 3px 3px $c_shadow;
+	font-size: 20px;
+	padding: 8px 16px;
+	position: fixed;
+	right: 10px;
+	z-index: 9;
+
+	span {
+		color: $c_main;
 	}
 }
 

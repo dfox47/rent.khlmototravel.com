@@ -1,0 +1,45 @@
+
+.bikes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.bike_desc {
+	border-radius: 8px;
+	border: 2px solid $c_shadow;
+	box-shadow: 5px 5px 5px $c_shadow;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+
+	&__img {}
+
+	&__model {}
+
+	&__price {
+		color: #000;
+	}
+}
+
+.bike_item {
+	display: block;
+	padding: 10px;
+
+	img {
+		display: block;
+		width: 200px;
+	}
+
+	input {
+		left: -9999px;
+		position: absolute;
+
+		&:checked {
+			+ .bike_desc {
+				border-color: $c_main;
+			}
+		}
+	}
+}

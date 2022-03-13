@@ -34,66 +34,18 @@ $icons = $i . '/icons';
 </head>
 
 <body>
-<div class="header">
-	<a class="logo" href="javascript:void(0);"><img src="/i/icons/logo.svg" alt="" /></a>
-
-	<ul class="topmenu">
-		<li class="topmenu__item"><a class="topmenu_link" href="javascript:void(0);">About</a></li>
-		<li class="topmenu__item"><a class="topmenu_link" href="javascript:void(0);">Bikes</a></li>
-		<li class="topmenu__item"><a class="topmenu_link" href="javascript:void(0);">Order</a></li>
-		<li class="topmenu__item"><a class="topmenu_link" href="javascript:void(0);">Contacts</a></li>
-	</ul>
-
-	<div class="header_contacts">
-		<a class="header_contacts__item" href="tel:+359898754877">+359 (89) 875-4877</a>
-		<a class="header_contacts__item" href="mailto:info@khlmototravel.com">info@khlmototravel.com</a>
-	</div>
-</div>
+<?php // header
+include_once 'template-parts/header.php'; ?>
 
 <div class="wrap">
-	<h1>Rent a motorcycle in Sofia | Bulgaria</h1>
+	<h1>Rent a motorcycle in Sofia</h1>
+</div>
 
-	<div class="bikes">
-		<label class="bike_item">
-			<input type="radio" name="bike" />
-			<img src="/i/bikes/1.jpg" alt="" />
-		</label>
+<?php //bikes
+include_once 'template-parts/bikes.php'; ?>
 
-		<label class="bike_item">
-			<input type="radio" name="bike" />
-			<img src="/i/bikes/2.jpg" alt="" />
-		</label>
-
-		<label class="bike_item">
-			<input type="radio" name="bike" />
-			<img src="/i/bikes/3.jpg" alt="" />
-		</label>
-
-		<label class="bike_item">
-			<input type="radio" name="bike" />
-			<img src="/i/bikes/4.jpg" alt="" />
-		</label>
-
-		<label class="bike_item">
-			<input type="radio" name="bike" />
-			<img src="/i/bikes/5.jpg" alt="" />
-		</label>
-
-		<label class="bike_item">
-			<input type="radio" name="bike" />
-			<img src="/i/bikes/6.jpg" alt="" />
-		</label>
-
-		<label class="bike_item">
-			<input type="radio" name="bike" />
-			<img src="/i/bikes/7.jpg" alt="" />
-		</label>
-
-		<label class="bike_item">
-			<input type="radio" name="bike" />
-			<img src="/i/bikes/8.jpg" alt="" />
-		</label>
-	</div>
+<div class="price_total">
+	Total: <span class="js-price-total">0</span> €
 </div>
 
 <!-- all scripts in one document -->
