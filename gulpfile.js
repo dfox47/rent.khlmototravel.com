@@ -79,6 +79,7 @@ gulp.task('copy_js', function () {
 gulp.task('js', function () {
 	return gulp.src([
 		localFolderJs + 'jquery-3.6.0.min.js',
+		localFolderJs + 'jquery-ui.min.js',
 		localFolderJs + 'owl.carousel.js',
 		localFolderJs + '**/*.js'
 	])

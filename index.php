@@ -44,6 +44,18 @@ include_once 'template-parts/header.php'; ?>
 <?php //bikes
 include_once 'template-parts/bikes.php'; ?>
 
+<div class="wrap">
+	<label class="pickup_date">
+		<span>Pickup date</span>
+		<input type="text" name="pickup_date" />
+	</label>
+
+	<label class="return_date">
+		<span>Return date</span>
+		<input type="text" name="return_date" />
+	</label>
+</div>
+
 <div class="price_total">
 	Total: <span class="js-price-total">0</span> €
 </div>
