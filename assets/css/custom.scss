@@ -1,7 +1,8 @@
 
 h1 {
 	font-size: 50px;
-	margin: .5em 0 1em;
+	font-weight: 700;
+	margin: .3em 0;
 	text-align: center;
 }
 
@@ -52,6 +53,7 @@ h1 {
 
 	span {
 		color: $c_main;
+		font-weight: 700;
 	}
 }
 

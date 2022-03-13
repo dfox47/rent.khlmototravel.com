@@ -1,5 +1,5 @@
 
-<span class="wrap">
+<div class="wrap">
 	<span class="bikes">
 		<label class="bike_item">
 			<input class="js-bike-price" type="radio" name="bike" data-price="30" />
@@ -81,4 +81,4 @@
 			</span>
 		</label>
 	</span>
-</span>
+</div>
