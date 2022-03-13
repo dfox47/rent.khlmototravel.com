@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
 // colors
 $c_success:     #aaf1a0;
 $c_main:        #f7941d;
@@ -13,7 +15,5 @@ $tablet:            'only screen and (max-width: 1023px)';
 $transition:        all .3s ease-in-out;
 
 // fonts
-$font_josefin:      'Josefin Sans',         Helvetica, Arial, sans-serif;
-$font_main:         'Playfair Display',     Helvetica, Arial, sans-serif;
-$font_playfair:     'Playfair Display',     Helvetica, Arial, sans-serif;
-$font_rubik:        'Rubik',                Helvetica, Arial, sans-serif;
+$font_main:         'Nunito',               Helvetica, Arial, sans-serif;
+$font_nunito:       'Nunito',               Helvetica, Arial, sans-serif;
