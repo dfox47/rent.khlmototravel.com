@@ -6,30 +6,6 @@ h1 {
 	text-align: center;
 }
 
-.header {
-	align-items: center;
-	background-color: $c_main;
-	display: flex;
-	justify-content: space-between;
-	padding: 0 30px;
-}
-
-.header_contacts {
-	align-items: flex-end;
-	display: flex;
-	flex-direction: column;
-
-	&__item {
-		color: #fff;
-		text-decoration: none;
-		transition: $transition;
-
-		&:hover {
-			color: #000;
-		}
-	}
-}
-
 .logo {
 	background-color: $c_main;
 	display: inline-block;
