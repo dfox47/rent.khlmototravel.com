@@ -32,13 +32,13 @@
 		</li>
 	</ul>
 
-	<ul class="lang_switcher">
-		<li><a class="js-lang-switch" href="javascript:void(0);" data-lang="en">en</a></li>
-		<li><a class="js-lang-switch" href="javascript:void(0);" data-lang="bg">bg</a></li>
-	</ul>
-
 	<div class="header_contacts">
 		<a class="header_contacts__item" href="tel:+359898754877">+359 (89) 875-4877</a>
 		<a class="header_contacts__item" href="mailto:info@khlmototravel.com" target="_blank">info@khlmototravel.com</a>
+
+		<ul class="lang_switcher">
+			<li><a class="js-lang-switch" href="javascript:void(0);" data-lang="en">en</a></li>
+			<li><a class="js-lang-switch" href="javascript:void(0);" data-lang="bg">bg</a></li>
+		</ul>
 	</div>
 </div>

@@ -6,6 +6,7 @@ h1 {
 	text-align: center;
 }
 
+// lang [START]
 .lang_bg {
 	.lang_en {
 		display: none;
@@ -20,14 +21,43 @@ h1 {
 
 .lang_switcher {
 	display: flex;
+	font-size: 18px;
+	font-weight: 700;
 	list-style: none;
 	text-transform: uppercase;
 
 	a,
 	a:visited {
 		color: #fff;
+		text-decoration: none;
+		transition: $transition;
+
+		&:hover {
+			color: #000;
+		}
+	}
+
+	li {
+		position: relative;
+
+		&::after {
+			background-color: #fff;
+			content: "";
+			display: inline-block;
+			height: 18px;
+			margin: 0 .3em -3px;
+			opacity: .7;
+			width: 2px;
+		}
+
+		&:last-child {
+			&::after {
+				display: none;
+			}
+		}
 	}
 }
+// lang [END]
 
 .logo {
 	background-color: $c_main;

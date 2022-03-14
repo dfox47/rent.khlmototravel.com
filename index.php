@@ -38,7 +38,10 @@ $icons = $i . '/icons';
 include_once 'template-parts/header.php'; ?>
 
 <div class="wrap">
-	<h1><span class="lang_en">Rent a motorcycle in Sofia</span><span class="lang_bg">Наемете мотоциклет в София</span></h1>
+	<h1>
+		<span class="lang_en">Rent a motorcycle in Sofia</span>
+		<span class="lang_bg">Наемете мотоциклет в София</span>
+	</h1>
 </div>
 
 <form class="order_form" action="/">
