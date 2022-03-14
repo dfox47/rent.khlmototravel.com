@@ -6,6 +6,29 @@ h1 {
 	text-align: center;
 }
 
+.lang_bg {
+	.lang_en {
+		display: none;
+	}
+}
+
+.lang_en {
+	.lang_bg {
+		display: none;
+	}
+}
+
+.lang_switcher {
+	display: flex;
+	list-style: none;
+	text-transform: uppercase;
+
+	a,
+	a:visited {
+		color: #fff;
+	}
+}
+
 .logo {
 	background-color: $c_main;
 	display: inline-block;

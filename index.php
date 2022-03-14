@@ -5,7 +5,7 @@ $icons = $i . '/icons';
 
 <!DOCTYPE html>
 
-<html lang="en" class="no-js">
+<html lang="en" class="lang_en no-js">
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
@@ -87,7 +87,7 @@ include_once 'template-parts/header.php'; ?>
 </form>
 
 <div class="price_total">
-	Total: <span class="js-price-total">0</span> €
+	<span class="lang_en">Total</span><span class="lang_bg">Общо</span>: <span class="js-price-total">0</span> €
 </div>
 
 <!-- all scripts in one document -->
