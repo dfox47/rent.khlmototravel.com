@@ -47,12 +47,12 @@ include_once 'template-parts/bikes.php'; ?>
 <div class="wrap">
 	<label class="pickup_date">
 		<span>Pickup date</span>
-		<input type="text" name="pickup_date" />
+		<input class="js-datepicker js-pickup-date" type="text" name="pickup_date" />
 	</label>
 
 	<label class="return_date">
 		<span>Return date</span>
-		<input type="text" name="return_date" />
+		<input class="js-datepicker js-return-date" type="text" name="return_date" />
 	</label>
 </div>
 
