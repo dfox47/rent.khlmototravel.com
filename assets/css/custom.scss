@@ -80,7 +80,7 @@ h1 {
 	right: 10px;
 	z-index: 9;
 
-	span {
+	&__number {
 		color: $c_main;
 		font-weight: 700;
 	}

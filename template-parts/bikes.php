@@ -2,7 +2,7 @@
 <div class="wrap">
 	<span class="bikes">
 		<label class="bike_item">
-			<input class="js-bike-price" type="radio" name="bike" data-price="30" />
+			<input class="js-bike-price" type="radio" name="bike" data-price="80" />
 
 			<span class="bike_desc">
 				<img class="bike_desc__img" src="/i/bikes/1.jpg" alt="" />
@@ -12,7 +12,7 @@
 		</label>
 
 		<label class="bike_item">
-			<input class="js-bike-price" type="radio" name="bike" data-price="100" />
+			<input class="js-bike-price" type="radio" name="bike" data-price="200" />
 
 			<span class="bike_desc">
 				<img src="/i/bikes/2.jpg" alt="" />
@@ -22,7 +22,7 @@
 		</label>
 
 		<label class="bike_item">
-			<input class="js-bike-price" type="radio" name="bike" data-price="105" />
+			<input class="js-bike-price" type="radio" name="bike" data-price="200" />
 
 			<span class="bike_desc">
 				<img src="/i/bikes/3.jpg" alt="" />
@@ -32,7 +32,7 @@
 		</label>
 
 		<label class="bike_item">
-			<input class="js-bike-price" type="radio" name="bike" data-price="115" />
+			<input class="js-bike-price" type="radio" name="bike" data-price="230" />
 
 			<span class="bike_desc">
 				<img src="/i/bikes/4.jpg" alt="" />
@@ -42,7 +42,7 @@
 		</label>
 
 		<label class="bike_item">
-			<input class="js-bike-price" type="radio" name="bike" data-price="135" />
+			<input class="js-bike-price" type="radio" name="bike" data-price="270" />
 
 			<span class="bike_desc">
 				<img src="/i/bikes/5.jpg" alt="" />
@@ -52,7 +52,7 @@
 		</label>
 
 		<label class="bike_item">
-			<input class="js-bike-price" type="radio" name="bike" data-price="155" />
+			<input class="js-bike-price" type="radio" name="bike" data-price="310" />
 
 			<span class="bike_desc">
 				<img src="/i/bikes/6.jpg" alt="" />
@@ -62,7 +62,7 @@
 		</label>
 
 		<label class="bike_item">
-			<input class="js-bike-price" type="radio" name="bike" data-price="135" />
+			<input class="js-bike-price" type="radio" name="bike" data-price="270" />
 
 			<span class="bike_desc">
 				<img src="/i/bikes/7.jpg" alt="" />
@@ -72,7 +72,7 @@
 		</label>
 
 		<label class="bike_item">
-			<input class="js-bike-price" type="radio" name="bike" data-price="135" />
+			<input class="js-bike-price" type="radio" name="bike" data-price="270" />
 
 			<span class="bike_desc">
 				<img src="/i/bikes/8.jpg" alt="" />

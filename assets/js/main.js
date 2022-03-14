@@ -9,8 +9,6 @@ $(window).bind('load', function() {
 	$(document).on('change', '.js-bike-price', function () {
 		priceTotal();
 	});
-
-	$('.js-datepicker').datepicker();
 });
 
 function priceTotal() {

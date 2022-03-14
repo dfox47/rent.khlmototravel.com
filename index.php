@@ -89,9 +89,13 @@ include_once 'template-parts/header.php'; ?>
 	</div>
 </form>
 
+<div class="js-date-diff">XXXXX</div>
+
 <div class="price_total">
-	<span class="lang_en">Total</span><span class="lang_bg">Общо</span>: <span class="js-price-total">0</span> €
+	<span class="lang_en">Total</span><span class="lang_bg">Общо</span>: <span class="price_total__number js-price-total">0</span> <span class="lang_en">BGN</span><span class="lang_bg">лв</span>
 </div>
+
+<div></div>
 
 <!-- all scripts in one document -->
 <script src="/all.min.js?v<?php echo(date("Ymd")); ?>"></script>
