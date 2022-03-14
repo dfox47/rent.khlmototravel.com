@@ -6,15 +6,19 @@ $(window).bind('load', function() {
 	let langIdStored = localStorage.getItem('langId');
 
 	if (langIdStored) {
-		$('html').removeClass('lang_en lang_bg').addClass('lang_' + langIdStored);
+		setLang(langIdStored);
 	}
 	// get language from local storage [END]
 
 	$(document).on('click', '.js-lang-switch', function () {
 		let langId = $(this).attr('data-lang');
 
-		$('html').removeClass('lang_en lang_bg').addClass('lang_' + langId);
-
-		localStorage.setItem('langId', langId);
+		setLang(langId);
 	});
 });
+
+function setLang(langId) {
+	$('html').removeClass('lang_en lang_bg').addClass('lang_' + langId).attr('lang', langId);
+
+	localStorage.setItem('langId', langId);
+}
