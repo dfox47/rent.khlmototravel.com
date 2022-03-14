@@ -38,7 +38,7 @@ $icons = $i . '/icons';
 include_once 'template-parts/header.php'; ?>
 
 <div class="wrap">
-	<h1>Rent a motorcycle in Sofia</h1>
+	<h1><span class="lang_en">Rent a motorcycle in Sofia</span><span class="lang_bg">Наемете мотоциклет в София</span></h1>
 </div>
 
 <form class="order_form" action="/">
@@ -61,7 +61,7 @@ include_once 'template-parts/header.php'; ?>
 			</label>
 		</div>
 
-		<h2>Contacts</h2>
+		<h2><span class="lang_en">Contacts</span><span class="lang_bg">Контакти</span></h2>
 
 		<div>
 			<label>
