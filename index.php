@@ -41,20 +41,50 @@ include_once 'template-parts/header.php'; ?>
 	<h1>Rent a motorcycle in Sofia</h1>
 </div>
 
-<?php //bikes
-include_once 'template-parts/bikes.php'; ?>
+<form class="order_form" action="/">
+	<?php //bikes
+	include_once 'template-parts/bikes.php'; ?>
 
-<div class="wrap">
-	<label class="pickup_date">
-		<span>Pickup date</span>
-		<input class="js-datepicker js-pickup-date" type="text" name="pickup_date" />
-	</label>
+	<div class="wrap">
+		<div>
+			<label class="pickup_date">
+				<span>Pickup date</span>
+				<input class="js-datepicker js-pickup-date" type="text" name="pickup_date" />
+			</label>
+		</div>
 
-	<label class="return_date">
-		<span>Return date</span>
-		<input class="js-datepicker js-return-date" type="text" name="return_date" />
-	</label>
-</div>
+		<div>
+			<label class="return_date">
+
+				<span>Return date</span>
+				<input class="js-datepicker js-return-date" type="text" name="return_date" />
+			</label>
+		</div>
+
+		<h2>Contacts</h2>
+
+		<div>
+			<label>
+				<span>Name</span>
+				<input type="text" name="biker_name" />
+			</label>
+
+			<label>
+				<span>Phone</span>
+				<input type="text" name="biker_phone" />
+			</label>
+
+			<label>
+				<span>E-mail</span>
+				<input type="text" name="biker_email" />
+			</label>
+		</div>
+
+		<div>
+			<button type="submit">Order</button>
+		</div>
+	</div>
+</form>
 
 <div class="price_total">
 	Total: <span class="js-price-total">0</span> €
