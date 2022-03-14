@@ -26,8 +26,8 @@
 
 		<li class="topmenu__item">
 			<a class="topmenu_link js-scroll-to" href="#contacts">
-				<span class="lang_en">Contacts</span>
-				<span class="lang_bg">Контакти</span>
+				<span class="lang_en">Contact info</span>
+				<span class="lang_bg">Информация за контакт</span>
 			</a>
 		</li>
 	</ul>
@@ -37,8 +37,8 @@
 		<a class="header_contacts__item" href="mailto:info@khlmototravel.com" target="_blank">info@khlmototravel.com</a>
 
 		<ul class="lang_switcher">
-			<li><a class="js-lang-switch" href="javascript:void(0);" data-lang="en">en</a></li>
-			<li><a class="js-lang-switch" href="javascript:void(0);" data-lang="bg">bg</a></li>
+			<li><a class="lang_en__active js-lang-switch" href="javascript:void(0);" data-lang="en">en</a></li>
+			<li><a class="lang_bg__active js-lang-switch" href="javascript:void(0);" data-lang="bg">bg</a></li>
 		</ul>
 	</div>
 </div>

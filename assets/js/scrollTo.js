@@ -1,11 +1,9 @@
 
 // scroll to element
 // example: <a href="#top" class="js-scroll-to"></a>
-var $ = jQuery.noConflict();
-
 $(window).on('load', function () {
 	$('.js-scroll-to').click(function (e) {
-		var link = $(this).attr('href').replace('/', '');
+		let link = $(this).attr('href').replace('/', '');
 
 		if ( $(link).length ) {
 			e.preventDefault();

@@ -17,11 +17,13 @@ h1 {
 	.lang_bg {
 		display: none;
 	}
+
+	.lang_en__active {}
 }
 
 .lang_switcher {
 	display: flex;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 700;
 	list-style: none;
 	text-transform: uppercase;
@@ -65,8 +67,8 @@ h1 {
 	padding: 0 10px;
 
 	img {
-		height: 100px;
-		width: 100px;
+		height: 70px;
+		width: 70px;
 	}
 }
 

@@ -1,10 +1,9 @@
 
-var $ = jQuery.noConflict();
-
 $(window).bind('load', function() {
 	$('.js-datepicker').datepicker({
 		onSelect: function() {
 			calcDiff();
+			priceTotal();
 		}
 	});
 });

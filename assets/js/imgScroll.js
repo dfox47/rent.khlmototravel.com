@@ -1,6 +1,3 @@
-var $ = jQuery.noConflict();
-
-
 
 $(window).on('load', function () {
 	img_scroll();
@@ -12,17 +9,17 @@ $(window).on('load', function () {
 
 function img_scroll() {
 	$('img.js-img-scroll').each(function () {
-		var _this = $(this);
+		let $this = $(this);
 
-		var bottom_of_element   = _this.offset().top + _this.outerHeight();
-		var bottom_of_screen    = $(window).scrollTop() + $(window).innerHeight();
-		var top_of_element      = _this.offset().top;
-		var top_of_screen       = $(window).scrollTop();
+		let bottom_of_element   = $this.offset().top + $this.outerHeight();
+		let bottom_of_screen    = $(window).scrollTop() + $(window).innerHeight();
+		let top_of_element      = $this.offset().top;
+		let top_of_screen       = $(window).scrollTop();
 
 		if ( (bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) ) {
-			var imgSrc = _this.attr('data-img-src');
+			let imgSrc = $this.attr('data-img-src');
 
-			_this.removeClass('js-img-scroll').attr( 'src', imgSrc );
+			$this.removeClass('js-img-scroll').attr( 'src', imgSrc );
 		}
 	});
 }
