@@ -84,18 +84,19 @@ include_once 'template-parts/header.php'; ?>
 		</div>
 
 		<div>
-			<button type="submit">Order</button>
+			<button type="submit">Submit</button>
 		</div>
 	</div>
 </form>
 
-<div class="js-date-diff">XXXXX</div>
+<div class="js-date-diff"></div>
 
 <div class="price_total">
 	<span class="lang_en">Total</span><span class="lang_bg">Общо</span>: <span class="price_total__number js-price-total">0</span> <span class="lang_en">BGN</span><span class="lang_bg">лв</span>
 </div>
 
-<div></div>
+<?php // footer
+include_once 'template-parts/footer.php'; ?>
 
 <!-- all scripts in one document -->
 <script src="/all.min.js?v<?php echo(date("Ymd")); ?>"></script>
