@@ -83,8 +83,8 @@ include_once 'template-parts/header.php'; ?>
 			</label>
 		</div>
 
-		<div>
-			<button type="submit">Submit</button>
+		<div class="form_submit">
+			<button class="btn btn__submit" type="submit">Submit</button>
 		</div>
 	</div>
 </form>

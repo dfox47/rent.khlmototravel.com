@@ -1,6 +1,7 @@
 
 $(window).bind('load', function() {
 	$('.js-datepicker').datepicker({
+		minDate: 0,
 		onSelect: function() {
 			calcDiff();
 			priceTotal();
