@@ -44,7 +44,7 @@ include_once 'template-parts/header.php'; ?>
 	</h1>
 </div>
 
-<form class="order_form" action="/template-parts/sendmail.php">
+<form class="order_form js-order-form" action="/template-parts/sendmail.php" method="post">
 	<?php // bikes
 	include_once 'template-parts/bikes.php'; ?>
 

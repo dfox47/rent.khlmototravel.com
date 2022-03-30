@@ -1,7 +1,7 @@
 <?php // Define constants
-define( "RECIPIENT_NAME",   "rentkhlmototravel.com" );
-define( "RECIPIENT_EMAIL",  "a9942212@gmail.com" ); // where to send email
-define( "EMAIL_SUBJECT",    "[rent.khlmototravel.com]" );
+const RECIPIENT_NAME = "rentkhlmototravel.com";
+const RECIPIENT_EMAIL = "a9942212@gmail.com"; // where to send email
+const EMAIL_SUBJECT = "[rent.khlmototravel.com]";
 
 //$sender_email			= isset( $_POST['feedback__email'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['sender_email'] ) : "";
 //$sender_name			= isset( $_POST['feedback__name'] ) ? preg_replace( "/[^\.\-\' a-zA-Z0-9]/", "", $_POST['sender_name'] ) : "";

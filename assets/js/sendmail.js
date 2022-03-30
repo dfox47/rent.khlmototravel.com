@@ -1,50 +1,65 @@
 
 var $ = jQuery;
 
+let $contactForm = $('.js-order-form');
+
+$(document).on('submit', $contactForm, function (e) {
+	e.preventDefault();
+
+	console.log('x1');
+
+	submitForm();
+});
+
 // AJAX contact form
 function submitForm() {
-	var messageDelay = 2000;
+	console.log('submitForm in action...');
 
-	return new Promise(function (resolve, reject) {
-		if (grecaptcha.getResponse() !== "") {
-			let contactForm = $('.form_subsbcribe').find('form');
+	let messageDelay = 2000;
 
-			if (
-				!contactForm.find('.form_subsbcribe__input_name').val() ||
-				!contactForm.find('.form_subsbcribe__input_email').val()
-			) {
-				$('.js-msg_incomplete').addClass('active').delay(messageDelay).queue(function () {
-					$(this).removeClass('active').dequeue();
-				});
-			} else {
-				contactForm.find('.js-msg_sending').addClass('active');
+	if (
+		!$contactForm.find('.js-pickup-date').val() ||
+		!$contactForm.find('.js-return-date').val()
+	) {
+		console.log('s16');
 
-				$.ajax({
-					url: contactForm.attr('action') + "?ajax=true",
-					type: contactForm.attr('method'),
-					data: contactForm.serialize(),
-					success: submitFinished
-				});
-			}
+		$('.js-msg-incomplete').addClass('active').delay(messageDelay).queue(function () {
+			console.log('s19');
+			$(this).removeClass('active').dequeue();
+		});
+	}
+	else {
+		console.log('s24');
+		$contactForm.find('.js-msg-sending').addClass('active');
+
+		$.ajax({
+			url: $contactForm.attr('action') + "?ajax=true",
+			type: $contactForm.attr('method'),
+			data: $contactForm.serialize(),
+			success: submitFinished
+		});
+	}
+
+	function submitFinished(response) {
+		response = $.trim(response);
+
+		$('.js-msg-sending').removeClass('active');
+
+		console.log('s40');
+
+		if (response == 'success') {
+			$('.js-msg-success').addClass('active').delay(messageDelay).queue(function() {
+				$(this).removeClass('active').dequeue();
+			});
+
+			console.log('s47');
 		}
+		else {
+			$('.js-msg-fail').addClass('active').delay(messageDelay).queue(function() {
+				$(this).removeClass('active').dequeue();
+			});
 
-		function submitFinished(response) {
-			response = $.trim(response);
-
-			$('.js-msg_sending').removeClass('active');
-
-			if (response == 'success') {
-				$('.js-msg_success').addClass('active').delay(messageDelay).queue(function() {
-					$(this).removeClass('active').dequeue();
-				});
-			}
-			else {
-				$('.js-msg_fail').addClass('active').delay(messageDelay).queue(function() {
-					$(this).removeClass('active').dequeue();
-				});
-			}
+			console.log('s54');
 		}
-
-		grecaptcha.reset();
-
-	});}
+	}
+}
