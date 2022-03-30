@@ -119,15 +119,40 @@ h1 {
 	}
 }
 
+.order_form {
+	input {
+		&[type="text"] {
+			font-size: 18px;
+			padding: .5em 1em;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+.order_label {
+	align-items: center;
+	display: flex;
+	font-size: 18px;
+	margin: 10px 0;
+
+	span {
+		padding: 0 1em 0 0;
+	}
+}
+
 .price_total {
 	background-color: #fff;
-	border: 1px solid $c_shadow_dark;
-	bottom: 1em;
-	box-shadow: 3px 3px 3px $c_shadow_dark;
-	font-size: 18px;
+	//border: 1px solid $c_shadow_dark;
+	border: 1px solid $c_main;
+	bottom: .5em;
+	box-shadow: 3px 3px 3px $c_main;
+	font-size: 30px;
 	padding: .5em 1em;
 	position: fixed;
-	right: 1em;
+	right: .5em;
 	z-index: 9;
 
 	&__number {

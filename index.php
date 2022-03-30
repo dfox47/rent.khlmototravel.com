@@ -50,15 +50,14 @@ include_once 'template-parts/header.php'; ?>
 
 	<div class="wrap">
 		<div>
-			<label class="pickup_date">
+			<label class="order_label pickup_date">
 				<span>Pickup date</span>
 				<input class="js-datepicker js-pickup-date" type="text" name="pickup_date" />
 			</label>
 		</div>
 
 		<div>
-			<label class="return_date">
-
+			<label class="order_label return_date">
 				<span>Return date</span>
 				<input class="js-datepicker js-return-date" type="text" name="return_date" />
 			</label>
@@ -67,17 +66,18 @@ include_once 'template-parts/header.php'; ?>
 		<h2><span class="lang_en">Contacts</span><span class="lang_bg">Контакти</span></h2>
 
 		<div>
-			<label>
+			<label class="order_label">
+				<span class="">Name</span>
 				<span>Name</span>
 				<input type="text" name="biker_name" />
 			</label>
 
-			<label>
+			<label class="order_label">
 				<span>Phone</span>
 				<input type="text" name="biker_phone" />
 			</label>
 
-			<label>
+			<label class="order_label">
 				<span>E-mail</span>
 				<input type="text" name="biker_email" />
 			</label>

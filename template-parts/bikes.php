@@ -1,6 +1,7 @@
 
 <div class="wrap">
 	<span class="bikes">
+		<!-- should be 800x600 or equal -->
 		<label class="bike_item">
 			<input class="js-bike-price" type="radio" name="bike" data-price="80" />
 
@@ -52,16 +53,6 @@
 		</label>
 
 		<label class="bike_item">
-			<input class="js-bike-price" type="radio" name="bike" data-price="310" />
-
-			<span class="bike_desc">
-				<img src="/i/bikes/6.jpg" alt="" />
-				<span class="bike_desc__model">BMW R-1250-GS Adv</span>
-				<span class="bike_desc__price">310 <span class="lang_en">BGN</span><span class="lang_bg">лв</span>/<span class="lang_en">day</span><span class="lang_bg">ден</span></span>
-			</span>
-		</label>
-
-		<label class="bike_item">
 			<input class="js-bike-price" type="radio" name="bike" data-price="270" />
 
 			<span class="bike_desc">
@@ -78,6 +69,16 @@
 				<img src="/i/bikes/8.jpg" alt="" />
 				<span class="bike_desc__model">BMW S1000 XR</span>
 				<span class="bike_desc__price">270 <span class="lang_en">BGN</span><span class="lang_bg">лв</span>/<span class="lang_en">day</span><span class="lang_bg">ден</span></span>
+			</span>
+		</label>
+
+				<label class="bike_item">
+			<input class="js-bike-price" type="radio" name="bike" data-price="310" />
+
+			<span class="bike_desc">
+				<img src="/i/bikes/6.jpg" alt="" />
+				<span class="bike_desc__model">BMW R-1250-GS Adv</span>
+				<span class="bike_desc__price">310 <span class="lang_en">BGN</span><span class="lang_bg">лв</span>/<span class="lang_en">day</span><span class="lang_bg">ден</span></span>
 			</span>
 		</label>
 	</span>
