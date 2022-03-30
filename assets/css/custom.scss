@@ -63,6 +63,10 @@ h2 {
 	.lang_en {
 		display: none;
 	}
+
+	.lang_bg__active {
+		color: #000;
+	}
 }
 
 .lang_en {
@@ -70,7 +74,9 @@ h2 {
 		display: none;
 	}
 
-	.lang_en__active {}
+	.lang_en__active {
+		color: #000;
+	}
 }
 
 .lang_switcher {
@@ -162,11 +168,10 @@ h2 {
 
 .price_total {
 	background-color: #fff;
-	//border: 1px solid $c_shadow_dark;
 	border: 1px solid $c_main;
 	bottom: .5em;
 	box-shadow: 3px 3px 3px $c_main;
-	font-size: 30px;
+	font-size: 24px;
 	padding: .5em 1em;
 	position: fixed;
 	right: .5em;
@@ -174,6 +179,7 @@ h2 {
 
 	&__number {
 		color: $c_main;
+		font-size: 34px;
 		font-weight: 700;
 	}
 }
