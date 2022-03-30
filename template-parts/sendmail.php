@@ -1,24 +1,29 @@
 <?php // Define constants
-define( "RECIPIENT_NAME",   "rosinfra-awards.ru" );
-//define( "RECIPIENT_EMAIL",  "dfox@foxartbox.com" ); // where to send email
-define( "RECIPIENT_EMAIL",  "info@rosinfra-awards.ru" ); // where to send email
-define( "EMAIL_SUBJECT",    "[rosinfra-awards.ru]" );
+define( "RECIPIENT_NAME",   "rentkhlmototravel.com" );
+define( "RECIPIENT_EMAIL",  "a9942212@gmail.com" ); // where to send email
+define( "EMAIL_SUBJECT",    "[rent.khlmototravel.com]" );
 
 //$sender_email			= isset( $_POST['feedback__email'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['sender_email'] ) : "";
 //$sender_name			= isset( $_POST['feedback__name'] ) ? preg_replace( "/[^\.\-\' a-zA-Z0-9]/", "", $_POST['sender_name'] ) : "";
 
-$form_subsbcribe__input_name            = $_POST['form_subsbcribe__input_name'];
-//$form_subsbcribe__input_company         = $_POST['form_subsbcribe__input_company'];
-$form_subsbcribe__input_email           = $_POST['form_subsbcribe__input_email'];
-//$form_subsbcribe__input_status          = $_POST['form_subsbcribe__input_status'];
-//$form_subsbcribe__input_company_site    = $_POST['form_subsbcribe__input_company_site'];
+$order_bike                 = $_POST['bike'];
+$order_pickup_date          = $_POST['pickup_date'];
+$order_return_date          = $_POST['return_date'];
+$order_biker_name           = $_POST['biker_name'];
+$order_biker_phone          = $_POST['biker_phone'];
+$order_biker_email          = $_POST['biker_email'];
 
 
 
 $message = "
 	<html>
 		<body>
-			<p><strong>$form_subsbcribe__input_name</strong> ($form_subsbcribe__input_email)</p>
+			<p><strong>Bike:</strong> $order_bike</p>
+			<p><strong>Pickup:</strong> $order_pickup_date</p>
+			<p><strong>Return:</strong> $order_return_date</p>
+			<p><strong>Name:</strong> $order_biker_name</p>
+			<p><strong>Phone:</strong> $order_biker_phone</p>
+			<p><strong>E-mail:</strong> $order_biker_email</p>
 		</body>
 	</html>
 ";
@@ -27,10 +32,10 @@ $message = "
 
 // If all values exist, send the email
 //if ($sender_name && $sender_email && $sender_company) {
-if ($form_subsbcribe__input_name) {
+if ($order_bike) {
 	$recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
 	$headers = "Content-type: text/html; charset = utf-8 \r\n";
-	$headers .= "From: " . $form_subsbcribe__input_name . " <" . $form_subsbcribe__input_email . ">";
+	$headers .= "From: " . $order_biker_name . " <" . $order_biker_email . ">";
 	$success = mail($recipient, EMAIL_SUBJECT, $message, $headers);
 }
 
