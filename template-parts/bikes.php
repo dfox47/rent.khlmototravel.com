@@ -1,6 +1,6 @@
 
 <div class="wrap">
-	<span class="bikes">
+	<div id="bikes" class="bikes">
 		<!-- should be 800x600 or equal -->
 		<label class="bike_item">
 			<input class="js-bike-price" type="radio" name="bike" data-price="80" value="Honda CB 650F" />
@@ -81,5 +81,5 @@
 				<span class="bike_desc__price"><span class="bike_price">310</span> <span class="lang_en">BGN</span><span class="lang_bg">лв</span>/<span class="lang_en">day</span><span class="lang_bg">ден</span></span>
 			</span>
 		</label>
-	</span>
+	</div>
 </div>

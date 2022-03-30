@@ -30,7 +30,7 @@ $icons = $i . '/icons';
 	<link rel="apple-touch-icon" sizes="152x152" href="<?php echo $icons; ?>/favicon/152.png" />
 	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $icons; ?>/favicon/180.png" />
 
-	<link rel="stylesheet" href="/styles.min.css?v<?php echo(date("YmdHis")); ?>" />
+	<link rel="stylesheet" href="/styles.min.css?v<?php echo(date("YmdH")); ?>" />
 </head>
 
 <body>
@@ -57,6 +57,9 @@ include_once 'template-parts/header.php'; ?>
 <div class="price_total">
 	<span class="lang_en">Total</span><span class="lang_bg">Общо</span>: <span class="price_total__number js-price-total">0</span> <span class="lang_en">BGN</span><span class="lang_bg">лв</span>
 </div>
+
+<?php // user info
+include_once 'template-parts/about_us.php'; ?>
 
 <?php // footer
 include_once 'template-parts/footer.php'; ?>
