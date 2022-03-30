@@ -1,0 +1,36 @@
+
+.order_form {
+	input {
+		&[type="text"] {
+			font-size: 18px;
+			padding: .5em 1em;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+.order_label {
+	align-items: center;
+	display: flex;
+	font-size: 18px;
+	justify-content: flex-end;
+	margin: 10px 0;
+
+	span {
+		padding: 0 1em 0 0;
+	}
+
+	input {
+		max-width: 220px;
+		width: 100%;
+	}
+}
+
+.order_user_info {
+	margin: 0 auto;
+	max-width: 450px;
+	width: 100%;
+}
