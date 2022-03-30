@@ -45,48 +45,11 @@ include_once 'template-parts/header.php'; ?>
 </div>
 
 <form class="order_form" action="/">
-	<?php //bikes
+	<?php // bikes
 	include_once 'template-parts/bikes.php'; ?>
 
-	<div class="wrap">
-		<div>
-			<label class="order_label pickup_date">
-				<span>Pickup date</span>
-				<input class="js-datepicker js-pickup-date" type="text" name="pickup_date" />
-			</label>
-		</div>
-
-		<div>
-			<label class="order_label return_date">
-				<span>Return date</span>
-				<input class="js-datepicker js-return-date" type="text" name="return_date" />
-			</label>
-		</div>
-
-		<h2><span class="lang_en">Contacts</span><span class="lang_bg">Контакти</span></h2>
-
-		<div>
-			<label class="order_label">
-				<span class="">Name</span>
-				<span>Name</span>
-				<input type="text" name="biker_name" />
-			</label>
-
-			<label class="order_label">
-				<span>Phone</span>
-				<input type="text" name="biker_phone" />
-			</label>
-
-			<label class="order_label">
-				<span>E-mail</span>
-				<input type="text" name="biker_email" />
-			</label>
-		</div>
-
-		<div class="form_submit">
-			<button class="btn btn__submit" type="submit">Submit</button>
-		</div>
-	</div>
+	<?php // user info
+	include_once 'template-parts/order_user_info.php'; ?>
 </form>
 
 <div class="js-date-diff"></div>
