@@ -4,13 +4,6 @@
 
 	<ul class="topmenu">
 		<li class="topmenu__item">
-			<a class="topmenu_link js-scroll-to" href="#about">
-				<span class="lang_en">About</span>
-				<span class="lang_bg">За нас</span>
-			</a>
-		</li>
-
-		<li class="topmenu__item">
 			<a class="topmenu_link js-scroll-to" href="#bikes">
 				<span class="lang_en">Bikes</span>
 				<span class="lang_bg">Мотоциклети</span>
@@ -25,9 +18,9 @@
 		</li>
 
 		<li class="topmenu__item">
-			<a class="topmenu_link js-scroll-to" href="#contacts">
-				<span class="lang_en">Contact info</span>
-				<span class="lang_bg">Информация за контакт</span>
+			<a class="topmenu_link js-scroll-to" href="#about_us">
+				<span class="lang_en">About</span>
+				<span class="lang_bg">За нас</span>
 			</a>
 		</li>
 	</ul>
