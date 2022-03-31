@@ -27,7 +27,7 @@
 		</div>
 
 		<div class="text-center">
-			<img class="icon_success" src="/i/icons/success.svg" alt="" />
+			<img class="popup_icon" src="/i/icons/success.svg" alt="" />
 		</div>
 
 		<div class="popup__close js-popup-close"></div>
@@ -36,6 +36,8 @@
 
 <!-- Incomplete -->
 <div class="popup js-msg-incomplete js-popup">
+	<div class="popup__bg js-popup-close"></div>
+
 	<div class="popup__content">
 		<p>
 			<span class="lang_bg">Моля, попълнете всички полета</span>
@@ -43,7 +45,9 @@
 		</p>
 
 		<div class="text-center">
-			<img class="icon_error" src="/i/icons/error.svg" alt="" />
+			<img class="popup_icon" src="/i/icons/error.svg" alt="" />
 		</div>
+
+		<div class="popup__close js-popup-close"></div>
 	</div>
 </div>

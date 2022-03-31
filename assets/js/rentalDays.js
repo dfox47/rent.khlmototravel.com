@@ -16,6 +16,9 @@ function calcDiff() {
 	let dateToGet       = $dateTo.datepicker('getDate');
 	let diff;
 
+	$dateFrom.removeClass('error');
+	$dateTo.removeClass('error');
+
 	// when date FROM empty
 	if (!dateFromGet) {
 		let dateFromInputVal = $dateFrom.val();

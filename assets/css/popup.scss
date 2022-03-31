@@ -8,7 +8,7 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 7;
+	z-index: 11;
 
 	&.active {
 		display: flex;
@@ -78,4 +78,11 @@
 			transform: rotate(-45deg);
 		}
 	}
+}
+
+.popup_icon {
+	display: inline-block;
+	height: auto;
+	margin: 20px 0 0;
+	width: 50px;
 }

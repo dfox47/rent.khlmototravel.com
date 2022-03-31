@@ -11,21 +11,31 @@ $(document).on('submit', $contactForm, function (e) {
 
 // AJAX contact form
 function submitForm() {
-	console.log('submitForm in action...');
+	let messageDelay   = 3000;
+	let nextStep       = true;
 
-	let messageDelay = 3000;
+	$(document).on('input', '.js-order-value-check', function () {
+		$(this).removeClass('error');
+	});
 
 	// incomplete
-	if (
-		!$contactForm.find('.js-pickup-date').val() ||
-		!$contactForm.find('.js-return-date').val()
-	) {
-		$('.js-msg-incomplete').addClass('active').delay(messageDelay).queue(function () {
-			$(this).removeClass('active').dequeue();
-		});
+	$('.js-order-value-check').removeClass('error').each(function () {
+		let $this = $(this);
 
-		return;
-	}
+		console.log('s21');
+
+		if ( !$this.val() ) {
+			$this.addClass('error');
+
+			$('.js-msg-incomplete').addClass('active').delay(messageDelay).queue(function () {
+				$(this).removeClass('active').dequeue();
+			});
+
+			nextStep = false;
+		}
+	});
+
+	if (!nextStep) return;
 
 	// sending
 	$contactForm.find('.js-msg-sending').addClass('active');

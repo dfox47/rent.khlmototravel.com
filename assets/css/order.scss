@@ -24,8 +24,14 @@
 	}
 
 	input {
+		border: 1px solid $c_shadow;
+		border-radius: 6px;
 		max-width: 220px;
 		width: 100%;
+
+		&.error {
+			border-color: red;
+		}
 	}
 }
 

@@ -5,7 +5,7 @@
 			<label class="order_label pickup_date">
 				<span class="lang_en">Pickup date</span>
 				<span class="lang_bg">Дата на вземане</span>
-				<input class="js-datepicker js-pickup-date" type="text" name="pickup_date" />
+				<input class="js-datepicker js-pickup-date js-order-value-check" type="text" name="pickup_date" />
 			</label>
 		</div>
 
@@ -13,7 +13,7 @@
 			<label class="order_label return_date">
 				<span class="lang_en">Return date</span>
 				<span class="lang_bg">Дата на връщане</span>
-				<input class="js-datepicker js-return-date" type="text" name="return_date" />
+				<input class="js-datepicker js-return-date js-order-value-check" type="text" name="return_date" />
 			</label>
 		</div>
 
@@ -26,18 +26,18 @@
 			<label class="order_label">
 				<span class="lang_en">Name</span>
 				<span class="lang_bg">Име</span>
-				<input type="text" name="biker_name" />
+				<input class="js-order-value-check" type="text" name="biker_name" />
 			</label>
 
 			<label class="order_label">
 				<span class="lang_en">Phone</span>
 				<span class="lang_bg">Телефон</span>
-				<input type="text" name="biker_phone" />
+				<input class="js-order-value-check" type="text" name="biker_phone" />
 			</label>
 
 			<label class="order_label">
 				<span>E-mail</span>
-				<input type="text" name="biker_email" />
+				<input class="js-order-value-check" type="text" name="biker_email" />
 			</label>
 		</div>
 
