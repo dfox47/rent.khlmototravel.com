@@ -50,6 +50,8 @@ include_once 'template-parts/header.php'; ?>
 
 	<?php // user info
 	include_once 'template-parts/order_user_info.php'; ?>
+
+	<input class="js-price-total-input" type="hidden" name="price_total" />
 </form>
 
 <div class="price_total">

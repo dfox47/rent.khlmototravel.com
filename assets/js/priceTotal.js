@@ -5,5 +5,6 @@ function priceTotal() {
 
 	if (priceBike && rentalDays) {
 		$('.js-price-total').text(priceBike * rentalDays);
+		$('.js-price-total-input').val(priceBike * rentalDays);
 	}
 }

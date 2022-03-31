@@ -5,11 +5,12 @@ const RECIPIENT_EMAIL       = "a9942212@gmail.com";
 const EMAIL_SUBJECT         = "[rent.khlmototravel.com]";
 
 $order_bike                 = $_POST['bike'];
-$order_pickup_date          = $_POST['pickup_date'];
-$order_return_date          = $_POST['return_date'];
+$order_biker_email          = $_POST['biker_email'];
 $order_biker_name           = $_POST['biker_name'];
 $order_biker_phone          = $_POST['biker_phone'];
-$order_biker_email          = $_POST['biker_email'];
+$order_pickup_date          = $_POST['pickup_date'];
+$order_price_total          = $_POST['price_total'];
+$order_return_date          = $_POST['return_date'];
 
 $message = "
 	<html lang='en'>
@@ -20,6 +21,7 @@ $message = "
 			<p><strong>Name:</strong> $order_biker_name</p>
 			<p><strong>Phone:</strong> $order_biker_phone</p>
 			<p><strong>E-mail:</strong> $order_biker_email</p>
+			<p><strong>TOTAL:</strong> $order_price_total лв</p>
 		</body>
 	</html>
 ";
