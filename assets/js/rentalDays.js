@@ -19,7 +19,13 @@ function calcDiff() {
 	// when date FROM empty
 	if (!dateFromGet) {
 		let dateFromInputVal = $dateFrom.val();
-		$dateFrom.datepicker();
+		$dateFrom.datepicker({
+			minDate: 0,
+			onSelect: function() {
+				calcDiff();
+				priceTotal();
+			}
+		});
 		$dateFrom.datepicker('setDate', dateFromInputVal);
 		dateFromGet = $dateFrom.datepicker('getDate');
 	}
@@ -27,7 +33,13 @@ function calcDiff() {
 	// when date TO empty
 	if (!dateToGet) {
 		let dateToInputVal = $dateTo.val();
-		$dateTo.datepicker();
+		$dateTo.datepicker({
+			minDate: 0,
+			onSelect: function() {
+				calcDiff();
+				priceTotal();
+			}
+		});
 		$dateTo.datepicker('setDate', dateToInputVal);
 		dateToGet = $dateTo.datepicker('getDate');
 	}
