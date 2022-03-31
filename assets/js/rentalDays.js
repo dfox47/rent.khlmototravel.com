@@ -11,10 +11,10 @@ $(window).bind('load', function() {
 
 function calcDiff() {
 	let $dateFrom       = $('.js-pickup-date');
-	let dateFromGet     = $dateFrom.datepicker('getDate');
 	let $dateTo         = $('.js-return-date');
+	let dateFromGet     = $dateFrom.datepicker('getDate');
 	let dateToGet       = $dateTo.datepicker('getDate');
-	let diff            = 0;
+	let diff;
 
 	// when date FROM empty
 	if (!dateFromGet) {
@@ -36,5 +36,5 @@ function calcDiff() {
 		diff = Math.floor((dateToGet.getTime() - dateFromGet.getTime()) / 86400000);
 	}
 
-	$('.js-date-diff').text(diff);
+	localStorage.setItem('rentalDatesDiff', diff);
 }

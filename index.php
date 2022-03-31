@@ -52,8 +52,6 @@ include_once 'template-parts/header.php'; ?>
 	include_once 'template-parts/order_user_info.php'; ?>
 </form>
 
-<div class="js-date-diff"></div>
-
 <div class="price_total">
 	<span class="lang_en">Total</span><span class="lang_bg">Общо</span>: <span class="price_total__number js-price-total">0</span> <span class="lang_en">BGN</span><span class="lang_bg">лв</span>
 </div>
