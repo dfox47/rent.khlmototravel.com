@@ -9,4 +9,10 @@ $(window).bind('load', function() {
 		calcDiff();
 		priceTotal();
 	});
+
+	$(document).on('click', '.js-popup-close', function (e) {
+		e.preventDefault();
+
+		$('.js-popup').removeClass('active');
+	});
 });

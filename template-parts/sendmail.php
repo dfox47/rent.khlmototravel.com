@@ -2,7 +2,7 @@
 <?php // Define constants
 const RECIPIENT_NAME        = "rentkhlmototravel.com";
 const RECIPIENT_EMAIL       = "a9942212@gmail.com";
-const EMAIL_SUBJECT         = "[rent.khlmototravel.com]";
+const EMAIL_SUBJECT         = "[New bike rent]";
 
 $order_bike                 = $_POST['bike'];
 $order_biker_email          = $_POST['biker_email'];
@@ -32,7 +32,7 @@ if ($order_bike) {
 	$recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
 	$headers = "Content-type: text/html; charset = utf-8 \r\n";
 	$headers .= "From: " . $order_biker_name . " <" . $order_biker_email . ">";
-	$success = mail($recipient, EMAIL_SUBJECT . $order_bike, $message, $headers);
+	$success = mail($recipient, EMAIL_SUBJECT . ' ' . $order_bike, $message, $headers);
 }
 
 // Return an appropriate response to the browser
