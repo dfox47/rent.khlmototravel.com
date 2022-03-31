@@ -1,6 +1,6 @@
 
 <div class="wrap">
-	<div class="order_user_info">
+	<div id="order" class="order_user_info">
 		<div>
 			<label class="order_label pickup_date">
 				<span class="lang_en">Pickup date</span>
